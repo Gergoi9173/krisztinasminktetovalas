@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ProductCard from "@/components/ProductCard";
+import TreatmentCard from "@/components/TreatmentCard";
 import { Button } from "@/components/ui/button";
-import { products } from "@/data/products";
+import { treatments } from "@/data/treatments";
 import heroImage from "@/assets/hero-cosmetics.jpg";
 
 const Index = () => {
@@ -26,34 +26,34 @@ const Index = () => {
                 Természetes szépség
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg">
-                Prémium kozmetikumok természetes összetevőkkel, amelyek kiemelni a bőröd természetes szépségét.
+                Professzionális arckezelések természetes hatóanyagokkal, amelyek kiemelni a bőröd természetes szépségét.
               </p>
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Fedezd fel a termékeket
+                Időpontfoglalás
               </Button>
             </div>
           </div>
         </section>
 
-        {/* Featured Products */}
+        {/* Featured Treatments */}
         <section className="py-20 bg-gradient-to-b from-background to-muted/20">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Kiemelt Termékek</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Kezeléseink</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Válogatott kollekcióink a legjobb természetes összetevőkből készülnek
+                Professzionális arckezelések a legjobb természetes összetevőkkel és modern technológiákkal
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {products.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  id={product.id}
-                  name={product.name}
-                  price={product.price}
-                  image={product.image}
-                  description={product.description}
+              {treatments.map((treatment) => (
+                <TreatmentCard
+                  key={treatment.id}
+                  id={treatment.id}
+                  name={treatment.name}
+                  duration={treatment.duration}
+                  image={treatment.image}
+                  description={treatment.description}
                 />
               ))}
             </div>
@@ -66,11 +66,12 @@ const Index = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Rólunk</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                A Bella kozmetikumok természetes összetevőkből készülnek, és a bőrödre gondolva lettek kifejlesztve.
+                A Bella szépségszalonban professzionális arckezeléseket kínálunk természetes hatóanyagokkal.
                 Hiszünk abban, hogy a szépség természetes, és a megfelelő ápolással mindenki ragyoghat.
               </p>
               <p className="text-lg text-muted-foreground">
-                Termékeink dermatológiailag teszteltek, cruelty-free és környezetbarát csomagolásban érkeznek.
+                Szakképzett kozmetikusaink egyéni bőrelemzés alapján állítják össze a számodra ideális kezelést.
+                Modern technológiákat és prémium termékeket használunk.
               </p>
             </div>
           </div>

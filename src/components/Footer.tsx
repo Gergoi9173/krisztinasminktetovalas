@@ -8,26 +8,26 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Bella</h3>
             <p className="text-sm text-muted-foreground">
-              Prémium kozmetikumok természetes összetevőkkel.
+              Professzionális arckezelések természetes hatóanyagokkal.
             </p>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold mb-4">Vásárlás</h4>
+            <h4 className="text-sm font-semibold mb-4">Kezelések</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Összes termék
+                  Összes kezelés
                 </Link>
               </li>
               <li>
                 <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Újdonságok
+                  Arckezelések
                 </Link>
               </li>
               <li>
                 <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Kedvencek
+                  Időpontfoglalás
                 </Link>
               </li>
             </ul>
