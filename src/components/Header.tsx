@@ -31,13 +31,6 @@ const Header = () => {
               <Search className="h-5 w-5" />
             </Button>
             <Button 
-              variant="default" 
-              size="sm"
-              className="hidden md:inline-flex bg-primary hover:bg-primary/90"
-            >
-              Időpontfoglalás
-            </Button>
-            <Button 
               variant="ghost" 
               size="icon" 
               className="md:hidden"
@@ -60,13 +53,6 @@ const Header = () => {
               <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
                 Kapcsolat
               </Link>
-              <Button 
-                variant="default" 
-                size="sm"
-                className="bg-primary hover:bg-primary/90 w-full"
-              >
-                Időpontfoglalás
-              </Button>
             </div>
           </nav>
         )}

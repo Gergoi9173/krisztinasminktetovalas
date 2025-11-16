@@ -59,13 +59,6 @@ const TreatmentDetail = () => {
                 {treatment.longDescription}
               </p>
 
-              <Button 
-                size="lg" 
-                className="w-full md:w-auto bg-primary hover:bg-primary/90"
-              >
-                Időpontfoglalás
-              </Button>
-
               <div className="pt-6 border-t border-border">
                 <h3 className="text-lg font-semibold mb-3">Előnyök</h3>
                 <ul className="space-y-2">

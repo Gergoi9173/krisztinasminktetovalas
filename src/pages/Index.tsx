@@ -25,12 +25,9 @@ const Index = () => {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
                 Természetes szépség
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-lg">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-lg">
                 Professzionális arckezelések természetes hatóanyagokkal, amelyek kiemelni a bőröd természetes szépségét.
               </p>
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Időpontfoglalás
-              </Button>
             </div>
           </div>
         </section>
