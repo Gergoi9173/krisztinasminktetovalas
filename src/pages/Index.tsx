@@ -32,13 +32,15 @@ const Index = () => {
         </section>
 
         {/* Services & Pricing */}
-        <ServiceList />
+        <section id="kezelesek">
+          <ServiceList />
+        </section>
 
         {/* Gallery */}
         <Gallery />
 
         {/* About Section */}
-        <section className="py-20 bg-gradient-to-b from-muted/20 to-background">
+        <section id="rolunk" className="py-20 bg-gradient-to-b from-muted/20 to-background">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Rólunk</h2>

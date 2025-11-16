@@ -20,15 +20,36 @@ const Header = () => {
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
-            <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            <a 
+              href="#kezelesek" 
+              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('kezelesek')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Kezelések
-            </Link>
-            <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            </a>
+            <a 
+              href="#rolunk" 
+              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('rolunk')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Rólunk
-            </Link>
-            <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+            </a>
+            <a 
+              href="#kapcsolat" 
+              className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('kapcsolat')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Kapcsolat
-            </Link>
+            </a>
           </nav>
 
           <div className="flex items-center gap-4">
@@ -49,15 +70,39 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
-              <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+              <a 
+                href="#kezelesek" 
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMenuOpen(false);
+                  document.getElementById('kezelesek')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Kezelések
-              </Link>
-              <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+              </a>
+              <a 
+                href="#rolunk" 
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMenuOpen(false);
+                  document.getElementById('rolunk')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Rólunk
-              </Link>
-              <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
+              </a>
+              <a 
+                href="#kapcsolat" 
+                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsMenuOpen(false);
+                  document.getElementById('kapcsolat')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Kapcsolat
-              </Link>
+              </a>
             </div>
           </nav>
         )}
