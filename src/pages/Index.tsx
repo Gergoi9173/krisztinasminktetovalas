@@ -43,12 +43,12 @@ const Index = () => {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Rólunk</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                A Bella szépségszalonban professzionális arckezeléseket kínálunk természetes hatóanyagokkal.
-                Hiszünk abban, hogy a szépség természetes, és a megfelelő ápolással mindenki ragyoghat.
+                Krisztina sminktetoválás szakértőként professzionális PMU kezeléseket, arckezeléseket és zsírbontó kavitációs kezeléseket kínálok Budapest szívében.
+                Hiszek abban, hogy a szépség természetes, és a megfelelő technikával mindenki ragyoghat.
               </p>
               <p className="text-lg text-muted-foreground">
-                Szakképzett kozmetikusaink egyéni bőrelemzés alapján állítják össze a számodra ideális kezelést.
-                Modern technológiákat és prémium termékeket használunk.
+                Egyéni konzultáció alapján állítom össze a számodra ideális kezelést.
+                Modern technológiákat és prémium termékeket használok minden kezelés során.
               </p>
             </div>
           </div>

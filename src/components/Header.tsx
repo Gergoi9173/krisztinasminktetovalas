@@ -2,6 +2,7 @@ import { Search, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import logo from "@/assets/logo-krisztina.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,8 +11,12 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-2xl font-semibold tracking-tight">
-            Bella
+          <Link to="/" className="flex items-center gap-3">
+            <img 
+              src={logo} 
+              alt="Krisztina Sminktetoválás" 
+              className="h-12 md:h-16 w-auto object-contain"
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
