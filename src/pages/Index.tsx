@@ -1,7 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import TreatmentCard from "@/components/TreatmentCard";
-import { Button } from "@/components/ui/button";
+import Gallery from "@/components/Gallery";
+import ServiceList from "@/components/ServiceList";
 import { treatments } from "@/data/treatments";
 import heroImage from "@/assets/hero-cosmetics.jpg";
 
@@ -57,8 +58,14 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Services & Pricing */}
+        <ServiceList />
+
+        {/* Gallery */}
+        <Gallery />
+
         {/* About Section */}
-        <section className="py-20">
+        <section className="py-20 bg-gradient-to-b from-muted/20 to-background">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Rólunk</h2>
