@@ -8,6 +8,14 @@ import lashLips from "@/assets/gallery/lash-lips.jpg";
 import browPmu from "@/assets/gallery/brow-pmu.jpg";
 import lashes from "@/assets/gallery/lashes.jpg";
 import beforeAfter from "@/assets/gallery/before-after.jpg";
+import lipPmuBa1 from "@/assets/gallery/lip-pmu-ba-1.jpg";
+import lipLashCollage from "@/assets/gallery/lip-lash-collage.jpg";
+import browPmuCollage from "@/assets/gallery/brow-pmu-collage.jpg";
+import lipBaRed from "@/assets/gallery/lip-ba-red.jpg";
+import lipBrowBa from "@/assets/gallery/lip-brow-ba.jpg";
+import lipRedCollage from "@/assets/gallery/lip-red-collage.jpg";
+import browLashNatural from "@/assets/gallery/brow-lash-natural.jpg";
+import browEyelinerCollage from "@/assets/gallery/brow-eyeliner-collage.jpg";
 
 const galleryImages = [
   { src: lipPmu1, alt: "Ajak sminktetoválás eredmény" },
@@ -20,6 +28,14 @@ const galleryImages = [
   { src: browPmu, alt: "Szemöldök permanens smink folyamat" },
   { src: lashes, alt: "Pilla lifting eredmény" },
   { src: beforeAfter, alt: "Előtte-utána eredmények" },
+  { src: lipPmuBa1, alt: "Ajak sminktetoválás előtte-utána" },
+  { src: lipLashCollage, alt: "Ajak és szempilla kezelések" },
+  { src: browPmuCollage, alt: "Szemöldök permanens smink kollázs" },
+  { src: lipBaRed, alt: "Ajak sminktetoválás előtte-utána piros" },
+  { src: lipBrowBa, alt: "Ajak és szemöldök előtte-utána" },
+  { src: lipRedCollage, alt: "Piros ajak sminktetoválás részletek" },
+  { src: browLashNatural, alt: "Természetes szemöldök és szempilla" },
+  { src: browEyelinerCollage, alt: "Szemöldök és szemhéj sminktetoválás" },
 ];
 
 const Gallery = () => {

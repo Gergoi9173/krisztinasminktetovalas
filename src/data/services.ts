@@ -26,12 +26,14 @@ export const serviceCategories: ServiceCategory[] = [
     ],
   },
   {
-    id: "szempilla-szemoldok",
-    name: "Szempilla & Szemöldök",
+    id: "szempilla-szemoldok-sminktetovalas",
+    name: "Szempilla, Szemöldök & Sminktetoválás",
     services: [
       { name: "Szemöldök festés", price: "2.200 Ft" },
       { name: "Szempilla festés", price: "2.500 Ft" },
       { name: "Pilla lifting hennával", price: "10.000 Ft" },
+      { name: "Sminktetoválás (szemöldök, száj, szemhéj)", price: "35.000 Ft" },
+      { name: "Korrekció (8 héten belül)", price: "5.000 Ft" },
     ],
   },
   {
@@ -48,11 +50,13 @@ export const serviceCategories: ServiceCategory[] = [
     ],
   },
   {
-    id: "sminktetovalas",
-    name: "Sminktetoválás",
+    id: "zsirbonto-kavitacio",
+    name: "Zsírbontó Kavitációs RF & Lézeres Fogyasztás",
     services: [
-      { name: "Szemöldök, száj, szemhéj", price: "35.000 Ft" },
-      { name: "Korrekció (8 héten belül)", price: "5.000 Ft" },
+      { name: "Első alkalom 1 területre", price: "15.000 Ft" },
+      { name: "5 alkalmas bérlet 1 területre", price: "60.000 Ft" },
+      { name: "Első alkalom 2 területre", price: "25.000 Ft" },
+      { name: "5 alkalmas bérlet 2 területre", price: "100.000 Ft" },
     ],
   },
 ];

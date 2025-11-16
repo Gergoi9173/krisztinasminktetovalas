@@ -1,5 +1,7 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { serviceCategories } from "@/data/services";
+import { Link } from "react-router-dom";
 
 const ServiceList = () => {
   return (
@@ -31,6 +33,15 @@ const ServiceList = () => {
                   </div>
                 ))}
               </div>
+              {category.id === "zsirbonto-kavitacio" && (
+                <div className="mt-4 pt-4 border-t border-border/50">
+                  <Link to="/rf-cavitation">
+                    <Button variant="outline" className="w-full">
+                      Részletes információ
+                    </Button>
+                  </Link>
+                </div>
+              )}
             </Card>
           ))}
         </div>

@@ -1,9 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import TreatmentCard from "@/components/TreatmentCard";
 import Gallery from "@/components/Gallery";
 import ServiceList from "@/components/ServiceList";
-import { treatments } from "@/data/treatments";
 import heroImage from "@/assets/hero-cosmetics.jpg";
 
 const Index = () => {
@@ -29,31 +27,6 @@ const Index = () => {
               <p className="text-lg md:text-xl text-muted-foreground max-w-lg">
                 Professzionális arckezelések természetes hatóanyagokkal, amelyek kiemelni a bőröd természetes szépségét.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Featured Treatments */}
-        <section className="py-20 bg-gradient-to-b from-background to-muted/20">
-          <div className="container mx-auto px-4 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Kezeléseink</h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Professzionális arckezelések a legjobb természetes összetevőkkel és modern technológiákkal
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {treatments.map((treatment) => (
-                <TreatmentCard
-                  key={treatment.id}
-                  id={treatment.id}
-                  name={treatment.name}
-                  duration={treatment.duration}
-                  image={treatment.image}
-                  description={treatment.description}
-                />
-              ))}
             </div>
           </div>
         </section>
