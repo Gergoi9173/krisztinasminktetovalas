@@ -1,28 +1,19 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { useCart } from "@/contexts/CartContext";
-import { toast } from "sonner";
+import { Clock } from "lucide-react";
 
-interface ProductCardProps {
+interface TreatmentCardProps {
   id: string;
   name: string;
-  price: number;
+  duration: string;
   image: string;
   description?: string;
 }
 
-const ProductCard = ({ id, name, price, image, description }: ProductCardProps) => {
-  const { addItem } = useCart();
-
-  const handleAddToCart = (e: React.MouseEvent) => {
-    e.preventDefault();
-    addItem({ id, name, price, image });
-    toast.success("Termék hozzáadva a kosárhoz");
-  };
-
+const TreatmentCard = ({ id, name, duration, image, description }: TreatmentCardProps) => {
   return (
-    <Link to={`/product/${id}`}>
+    <Link to={`/treatment/${id}`}>
       <Card className="group overflow-hidden border-border hover:shadow-[var(--shadow-hover)] transition-all duration-300">
         <div className="aspect-square overflow-hidden bg-muted">
           <img
@@ -39,13 +30,16 @@ const ProductCard = ({ id, name, price, image, description }: ProductCardProps) 
             </p>
           )}
           <div className="flex items-center justify-between">
-            <span className="text-xl font-semibold">{price.toLocaleString('hu-HU')} Ft</span>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Clock className="h-4 w-4" />
+              <span className="text-sm">{duration}</span>
+            </div>
             <Button 
               size="sm" 
-              onClick={handleAddToCart}
-              className="bg-primary hover:bg-primary/90"
+              variant="outline"
+              className="group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-colors"
             >
-              Kosárba
+              Részletek
             </Button>
           </div>
         </div>
@@ -54,4 +48,4 @@ const ProductCard = ({ id, name, price, image, description }: ProductCardProps) 
   );
 };
 
-export default ProductCard;
+export default TreatmentCard;

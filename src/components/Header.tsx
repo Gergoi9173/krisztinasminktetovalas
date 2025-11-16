@@ -1,13 +1,10 @@
-import { ShoppingBag, Search, Menu } from "lucide-react";
+import { Search, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { useCart } from "@/contexts/CartContext";
 import { useState } from "react";
 
 const Header = () => {
-  const { items } = useCart();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const itemCount = items.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
@@ -19,7 +16,7 @@ const Header = () => {
 
           <nav className="hidden md:flex items-center gap-8">
             <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
-              Termékek
+              Kezelések
             </Link>
             <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
               Rólunk
@@ -33,16 +30,13 @@ const Header = () => {
             <Button variant="ghost" size="icon" className="hidden md:flex">
               <Search className="h-5 w-5" />
             </Button>
-            <Link to="/cart">
-              <Button variant="ghost" size="icon" className="relative">
-                <ShoppingBag className="h-5 w-5" />
-                {itemCount > 0 && (
-                  <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center">
-                    {itemCount}
-                  </span>
-                )}
-              </Button>
-            </Link>
+            <Button 
+              variant="default" 
+              size="sm"
+              className="hidden md:inline-flex bg-primary hover:bg-primary/90"
+            >
+              Időpontfoglalás
+            </Button>
             <Button 
               variant="ghost" 
               size="icon" 
@@ -58,7 +52,7 @@ const Header = () => {
           <nav className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
               <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
-                Termékek
+                Kezelések
               </Link>
               <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
                 Rólunk
@@ -66,6 +60,13 @@ const Header = () => {
               <Link to="/" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
                 Kapcsolat
               </Link>
+              <Button 
+                variant="default" 
+                size="sm"
+                className="bg-primary hover:bg-primary/90 w-full"
+              >
+                Időpontfoglalás
+              </Button>
             </div>
           </nav>
         )}
