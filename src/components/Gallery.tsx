@@ -1,5 +1,4 @@
 import lipPmu1 from "@/assets/gallery/lip-pmu-1.jpg";
-import makeup1 from "@/assets/gallery/makeup-1.jpg";
 import lipClose from "@/assets/gallery/lip-close.jpg";
 import lipPmu2 from "@/assets/gallery/lip-pmu-2.jpg";
 import browClose from "@/assets/gallery/brow-close.jpg";
@@ -19,7 +18,6 @@ import browEyelinerCollage from "@/assets/gallery/brow-eyeliner-collage.jpg";
 
 const galleryImages = [
   { src: lipPmu1, alt: "Ajak sminktetoválás eredmény" },
-  { src: makeup1, alt: "Professzionális smink" },
   { src: lipClose, alt: "Ajak sminktetoválás közeli" },
   { src: lipPmu2, alt: "Ajak permanens smink részletek" },
   { src: browClose, alt: "Szemöldök sminktetoválás részlet" },
@@ -43,9 +41,9 @@ const Gallery = () => {
     <section className="py-20 bg-muted/20">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Munkáink</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Munkáim</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Tekintse meg professzionális munkáinkat és eredményeinket
+            Tekintsd meg professzionális munkáimat és eredményeimet
           </p>
         </div>
 

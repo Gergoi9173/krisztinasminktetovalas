@@ -31,14 +31,14 @@ const Header = () => {
               Kezelések
             </a>
             <a 
-              href="#rolunk" 
+              href="#rolam" 
               className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
               onClick={(e) => {
                 e.preventDefault();
-                document.getElementById('rolunk')?.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('rolam')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              Rólunk
+              Rólam
             </a>
             <a 
               href="#kapcsolat" 
@@ -79,15 +79,15 @@ const Header = () => {
                 Kezelések
               </a>
               <a 
-                href="#rolunk" 
+                href="#rolam" 
                 className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
                 onClick={(e) => {
                   e.preventDefault();
                   setIsMenuOpen(false);
-                  document.getElementById('rolunk')?.scrollIntoView({ behavior: 'smooth' });
+                  document.getElementById('rolam')?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                Rólunk
+                Rólam
               </a>
               <a 
                 href="#kapcsolat" 

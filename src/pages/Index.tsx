@@ -25,7 +25,7 @@ const Index = () => {
                 Természetes szépség
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-lg">
-                Professzionális arckezelések természetes hatóanyagokkal, amelyek kiemelni a bőröd természetes szépségét.
+                Professzionális arckezeléseket kínálok természetes hatóanyagokkal, amelyek kiemelik bőröd természetes szépségét.
               </p>
             </div>
           </div>
@@ -40,12 +40,12 @@ const Index = () => {
         <Gallery />
 
         {/* About Section */}
-        <section id="rolunk" className="py-20 bg-gradient-to-b from-muted/20 to-background">
+        <section id="rolam" className="py-20 bg-gradient-to-b from-muted/20 to-background">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Rólunk</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Rólam</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Krisztina sminktetoválás szakértőként professzionális PMU kezeléseket, arckezeléseket és zsírbontó kavitációs kezeléseket kínálok Budapest szívében.
+                Krisztina vagyok, sminktetoválás szakértőként professzionális PMU kezeléseket, arckezeléseket és zsírbontó kavitációs kezeléseket kínálok Budapest szívében.
                 Hiszek abban, hogy a szépség természetes, és a megfelelő technikával mindenki ragyoghat.
               </p>
               <p className="text-lg text-muted-foreground">
