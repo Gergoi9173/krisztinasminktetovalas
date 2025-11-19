@@ -8,7 +8,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Krisztina Sminktetoválás</h3>
             <p className="text-sm text-muted-foreground mb-4">
-              Professzionális sminktetoválás és szépségápolás szakértővel.
+              Professzionális sminktetoválást és szépségápolást kínálok.
             </p>
             <div className="space-y-2 text-sm text-muted-foreground">
               <p>📍 Budapest, Rákos út 185, 1152</p>
@@ -72,7 +72,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-sm text-center text-muted-foreground">
-            © 2024 Krisztina Sminktetoválás. Minden jog fenntartva.
+            © 2025 Krisztina Sminktetoválás. Minden jog fenntartva.
           </p>
         </div>
       </div>

@@ -11,6 +11,16 @@ export interface ServiceCategory {
 
 export const serviceCategories: ServiceCategory[] = [
   {
+    id: "zsirbonto-kavitacio",
+    name: "Zsírbontó Kavitációs RF & Lézeres Fogyasztás",
+    services: [
+      { name: "Első alkalom 1 területre", price: "15.000 Ft" },
+      { name: "5 alkalmas bérlet 1 területre", price: "60.000 Ft" },
+      { name: "Első alkalom 2 területre", price: "25.000 Ft" },
+      { name: "5 alkalmas bérlet 2 területre", price: "100.000 Ft" },
+    ],
+  },
+  {
     id: "gyantazas",
     name: "Gyantázás",
     services: [
@@ -26,20 +36,29 @@ export const serviceCategories: ServiceCategory[] = [
     ],
   },
   {
-    id: "szempilla-szemoldok-sminktetovalas",
-    name: "Szempilla, Szemöldök & Sminktetoválás",
+    id: "szempilla-szemoldok",
+    name: "Szempilla & Szemöldök",
     services: [
       { name: "Szemöldök festés", price: "2.200 Ft" },
       { name: "Szempilla festés", price: "2.500 Ft" },
       { name: "Pilla lifting hennával", price: "10.000 Ft" },
-      { name: "Sminktetoválás (szemöldök, száj, szemhéj)", price: "35.000 Ft" },
-      { name: "Korrekció (8 héten belül)", price: "5.000 Ft" },
+    ],
+  },
+  {
+    id: "sminktetovalas",
+    name: "Sminktetoválás",
+    services: [
+      { name: "Szemöldök", price: "35.000 Ft" },
+      { name: "Száj", price: "35.000 Ft" },
+      { name: "Szemhéj", price: "35.000 Ft" },
+      { name: "Korrekció", price: "8.000 Ft" },
     ],
   },
   {
     id: "arckezelesek",
     name: "Arckezelések",
     services: [
+      { name: "Arc és tokalifting", price: "15.000 Ft" },
       { name: "Arctisztítás", price: "12.500 Ft" },
       { name: "Hydro arcfiatalítás", price: "13.500 Ft" },
       { name: "Hydro bőrhalványítás", price: "13.500 Ft" },
@@ -47,16 +66,6 @@ export const serviceCategories: ServiceCategory[] = [
       { name: "Tűs mezoterápia", price: "22.000 Ft" },
       { name: "Viózás & maszk", price: "5.000 Ft" },
       { name: "Ledes kezelés", price: "13.500 Ft" },
-    ],
-  },
-  {
-    id: "zsirbonto-kavitacio",
-    name: "Zsírbontó Kavitációs RF & Lézeres Fogyasztás",
-    services: [
-      { name: "Első alkalom 1 területre", price: "15.000 Ft" },
-      { name: "5 alkalmas bérlet 1 területre", price: "60.000 Ft" },
-      { name: "Első alkalom 2 területre", price: "25.000 Ft" },
-      { name: "5 alkalmas bérlet 2 területre", price: "100.000 Ft" },
     ],
   },
 ];
