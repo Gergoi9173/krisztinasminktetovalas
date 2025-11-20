@@ -15,7 +15,7 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-3">
             <img 
               src={logo} 
-              alt="Krisztina Sminktetoválás" 
+              alt="BeautyByKristina" 
               className="h-12 md:h-16 w-auto object-contain"
             />
           </Link>

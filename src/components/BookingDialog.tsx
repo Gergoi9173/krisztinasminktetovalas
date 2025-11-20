@@ -18,7 +18,7 @@ const BookingDialog = ({ children }: BookingDialogProps) => {
         </DialogHeader>
         <div className="space-y-6 py-4">
           <div className="text-center space-y-2">
-            <h3 className="text-xl font-semibold">Krisztina Sminktetoválás</h3>
+            <h3 className="text-xl font-semibold">BeautyByKristina</h3>
             <p className="text-muted-foreground">
               Foglalj időpontot telefonon vagy látogass el személyesen!
             </p>

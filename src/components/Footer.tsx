@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">Krisztina Sminktetoválás</h3>
+            <h3 className="text-lg font-semibold mb-4">BeautyByKristina</h3>
             <p className="text-sm text-muted-foreground mb-4">
               Professzionális sminktetoválást és szépségápolást kínálok.
             </p>
@@ -75,7 +75,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-sm text-center text-muted-foreground">
-            © 2025 Krisztina Sminktetoválás. Minden jog fenntartva.
+            © 2025 BeautyByKristina. Minden jog fenntartva.
           </p>
         </div>
       </div>
