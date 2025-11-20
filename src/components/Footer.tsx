@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import BookingDialog from "@/components/BookingDialog";
+import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
@@ -30,19 +31,21 @@ const Footer = () => {
             <h4 className="text-sm font-semibold mb-4">Kezelések</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="#kezelesek" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Összes kezelés
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <a href="#kezelesek" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Arckezelések
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Időpontfoglalás
-                </Link>
+                <BookingDialog>
+                  <Button variant="link" className="text-sm text-muted-foreground hover:text-foreground transition-colors p-0 h-auto">
+                    Időpontfoglalás
+                  </Button>
+                </BookingDialog>
               </li>
             </ul>
           </div>

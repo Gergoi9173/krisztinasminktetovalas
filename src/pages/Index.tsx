@@ -2,7 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import ServiceList from "@/components/ServiceList";
-import heroImage from "@/assets/hero-cosmetics.jpg";
+import BookingDialog from "@/components/BookingDialog";
+import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hero-beauty.png";
 
 const Index = () => {
   return (
@@ -16,7 +18,7 @@ const Index = () => {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${heroImage})` }}
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-background/40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/60" />
           </div>
           
           <div className="relative container mx-auto px-4 lg:px-8 text-center md:text-left">
@@ -24,9 +26,14 @@ const Index = () => {
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 tracking-tight">
                 Természetes szépség
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground max-w-lg">
+              <p className="text-lg md:text-xl text-muted-foreground max-w-lg mb-8">
                 Professzionális arckezeléseket kínálok természetes hatóanyagokkal, amelyek kiemelik bőröd természetes szépségét.
               </p>
+              <BookingDialog>
+                <Button size="lg" className="text-lg px-8">
+                  Időpontfoglalás
+                </Button>
+              </BookingDialog>
             </div>
           </div>
         </section>

@@ -13,11 +13,22 @@ const ServiceList = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {serviceCategories.map((category) => (
-            <Card 
-              key={category.id} 
-              className={`p-6 ${category.id === 'zsirbonto-kavitacio' ? 'md:col-span-2' : ''}`}
-            >
+          {serviceCategories.map((category, index) => {
+            // Első sor: Zsírbontó Kavitáció (teljes szélesség)
+            // Második sor: Sminktetoválás, Arckezelések
+            // Harmadik sor: Szempilla & Szemöldök, Gyantázás
+            const getGridClass = () => {
+              if (category.id === 'zsirbonto-kavitacio') return 'md:col-span-2';
+              if (category.id === 'sminktetovalas' || category.id === 'arckezelesek') return '';
+              if (category.id === 'szempilla-szemoldok' || category.id === 'gyantazas') return '';
+              return '';
+            };
+            
+            return (
+              <Card 
+                key={category.id} 
+                className={`p-6 ${getGridClass()}`}
+              >
               <h3 className="text-xl font-semibold mb-4 text-primary">
                 {category.name}
               </h3>
@@ -120,7 +131,8 @@ const ServiceList = () => {
                 </div>
               )}
             </Card>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
