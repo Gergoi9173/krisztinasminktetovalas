@@ -21,30 +21,6 @@ export const serviceCategories: ServiceCategory[] = [
     ],
   },
   {
-    id: "gyantazas",
-    name: "Gyantázás",
-    services: [
-      { name: "Szemöldök", price: "2.200 Ft" },
-      { name: "Bajusz", price: "1.500 Ft" },
-      { name: "Pajesz, Áll", price: "1.500 Ft" },
-      { name: "Hónalj", price: "2.800 Ft" },
-      { name: "Bikini", price: "2.800 Ft" },
-      { name: "Kar könyékig", price: "3.200 Ft" },
-      { name: "Kar végig", price: "3.800 Ft" },
-      { name: "Láb térdig", price: "3.800 Ft" },
-      { name: "Láb végig", price: "5.800 Ft" },
-    ],
-  },
-  {
-    id: "szempilla-szemoldok",
-    name: "Szempilla & Szemöldök",
-    services: [
-      { name: "Szemöldök festés", price: "2.200 Ft" },
-      { name: "Szempilla festés", price: "2.500 Ft" },
-      { name: "Pilla lifting hennával", price: "10.000 Ft" },
-    ],
-  },
-  {
     id: "sminktetovalas",
     name: "Sminktetoválás",
     services: [
@@ -66,6 +42,30 @@ export const serviceCategories: ServiceCategory[] = [
       { name: "Tűs mezoterápia", price: "22.000 Ft" },
       { name: "Viózás & maszk", price: "5.000 Ft" },
       { name: "Ledes kezelés", price: "13.500 Ft" },
+    ],
+  },
+  {
+    id: "szempilla-szemoldok",
+    name: "Szempilla & Szemöldök",
+    services: [
+      { name: "Szemöldök festés", price: "2.200 Ft" },
+      { name: "Szempilla festés", price: "2.500 Ft" },
+      { name: "Pilla lifting hennával", price: "10.000 Ft" },
+    ],
+  },
+  {
+    id: "gyantazas",
+    name: "Gyantázás",
+    services: [
+      { name: "Szemöldök", price: "2.200 Ft" },
+      { name: "Bajusz", price: "1.500 Ft" },
+      { name: "Pajesz, Áll", price: "1.500 Ft" },
+      { name: "Hónalj", price: "2.800 Ft" },
+      { name: "Bikini", price: "2.800 Ft" },
+      { name: "Kar könyékig", price: "3.200 Ft" },
+      { name: "Kar végig", price: "3.800 Ft" },
+      { name: "Láb térdig", price: "3.800 Ft" },
+      { name: "Láb végig", price: "5.800 Ft" },
     ],
   },
 ];
