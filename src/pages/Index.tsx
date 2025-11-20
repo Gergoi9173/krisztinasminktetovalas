@@ -65,7 +65,7 @@ const Index = () => {
               <div className="flex justify-center md:justify-end">
                 <img 
                   src={krisztinaProfile} 
-                  alt="Krisztina Sminktetoválás" 
+                  alt="BeautyByKristina" 
                   className="rounded-lg shadow-lg w-full max-w-md object-cover"
                 />
               </div>
