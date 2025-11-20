@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import logo from "@/assets/logo-krisztina.jpg";
+import BookingDialog from "@/components/BookingDialog";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,6 +51,9 @@ const Header = () => {
             >
               Kapcsolat
             </a>
+            <BookingDialog>
+              <Button>Időpontfoglalás</Button>
+            </BookingDialog>
           </nav>
 
           <div className="flex items-center gap-4">
@@ -100,6 +104,11 @@ const Header = () => {
               >
                 Kapcsolat
               </a>
+              <BookingDialog>
+                <Button className="w-full" onClick={() => setIsMenuOpen(false)}>
+                  Időpontfoglalás
+                </Button>
+              </BookingDialog>
             </div>
           </nav>
         )}
