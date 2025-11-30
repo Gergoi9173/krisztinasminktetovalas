@@ -105,7 +105,7 @@ const Header = () => {
                 Kapcsolat
               </a>
               <BookingDialog>
-                <Button className="w-full" onClick={() => setIsMenuOpen(false)}>
+                <Button className="w-full">
                   Időpontfoglalás
                 </Button>
               </BookingDialog>
