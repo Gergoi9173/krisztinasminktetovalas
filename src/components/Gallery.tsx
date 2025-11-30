@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { X } from "lucide-react";
 import lipPmu1 from "@/assets/gallery/lip-pmu-1.jpg";
 import lipClose from "@/assets/gallery/lip-close.jpg";
 import lipPmu2 from "@/assets/gallery/lip-pmu-2.jpg";
@@ -37,8 +40,10 @@ const galleryImages = [
 ];
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+
   return (
-    <section className="py-20 bg-muted/20">
+    <section className="py-20 bg-card/30">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Munkáim</h2>
@@ -52,6 +57,7 @@ const Gallery = () => {
             <div
               key={index}
               className="aspect-square overflow-hidden rounded-lg bg-muted group cursor-pointer"
+              onClick={() => setSelectedImage(image)}
             >
               <img
                 src={image.src}
@@ -62,6 +68,25 @@ const Gallery = () => {
           ))}
         </div>
       </div>
+
+      {/* Lightbox Dialog */}
+      <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
+        <DialogContent className="max-w-[95vw] max-h-[95vh] p-0 border-none bg-black/95 flex items-center justify-center">
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 z-50 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+          >
+            <X className="h-6 w-6 text-white" />
+          </button>
+          {selectedImage && (
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              className="max-w-full max-h-[90vh] object-contain"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
