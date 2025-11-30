@@ -18,6 +18,7 @@ export const serviceCategories: ServiceCategory[] = [
       { name: "5 alkalmas bérlet 1 területre", price: "60.000 Ft" },
       { name: "Első alkalom 2 területre", price: "25.000 Ft" },
       { name: "5 alkalmas bérlet 2 területre", price: "100.000 Ft" },
+      { name: "Arc és tokalifting", price: "15.000 Ft" },
     ],
   },
   {
@@ -34,7 +35,6 @@ export const serviceCategories: ServiceCategory[] = [
     id: "arckezelesek",
     name: "Arckezelések",
     services: [
-      { name: "Arc és tokalifting", price: "15.000 Ft" },
       { name: "Arctisztítás", price: "12.500 Ft" },
       { name: "Hydro arcfiatalítás", price: "13.500 Ft" },
       { name: "Hydro bőrhalványítás", price: "13.500 Ft" },
