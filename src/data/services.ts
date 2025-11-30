@@ -28,7 +28,7 @@ export const serviceCategories: ServiceCategory[] = [
       { name: "Szemöldök", price: "35.000 Ft" },
       { name: "Száj", price: "35.000 Ft" },
       { name: "Szemhéj", price: "35.000 Ft" },
-      { name: "Korrekció", price: "8.000 Ft" },
+      { name: "Korrekció", price: "5.000 Ft" },
     ],
   },
   {
