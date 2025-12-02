@@ -16,13 +16,13 @@ const Index = () => {
         {/* Hero Section */}
         <section className="min-h-screen flex items-center">
           {/* Mobile: Image with overlay text */}
-          <div className="md:hidden relative w-full min-h-screen flex items-center">
+          <div className="md:hidden relative w-full min-h-screen flex items-end">
             <img 
               src={heroCollage} 
               alt="Sminktetoválás és szépségápolás eredmények" 
-              className="absolute inset-0 w-full h-full object-cover object-left brightness-[0.4]"
+              className="absolute inset-0 w-full h-full object-cover object-center brightness-[0.5]"
             />
-            <div className="relative z-10 container mx-auto px-6 text-center">
+            <div className="relative z-10 w-full px-6 pb-16 text-center">
               <h1 className="text-4xl font-bold mb-6 tracking-tight text-white">
                 Ragyogj egész évben
               </h1>
