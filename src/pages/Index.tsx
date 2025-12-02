@@ -20,7 +20,7 @@ const Index = () => {
             <img 
               src={heroCollage} 
               alt="Sminktetoválás és szépségápolás eredmények" 
-              className="absolute inset-0 w-full h-full object-cover object-center brightness-[0.5]"
+              className="absolute inset-0 w-full h-full object-cover object-left brightness-[0.5]"
             />
             <div className="relative z-10 w-full px-6 pb-16 text-center">
               <h1 className="text-4xl font-bold mb-6 tracking-tight text-white">
