@@ -12,12 +12,15 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-card/90 backdrop-blur-md supports-[backdrop-filter]:bg-card/80 shadow-sm">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-2">
             <img 
               src={logo} 
               alt="BeautyByKristina" 
               className="h-12 md:h-16 w-auto object-contain"
             />
+            <span className="font-display text-lg md:text-xl tracking-wide text-foreground">
+              beautybykristina
+            </span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
