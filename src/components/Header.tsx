@@ -11,14 +11,14 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-card/90 backdrop-blur-md supports-[backdrop-filter]:bg-card/80 shadow-sm">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center gap-2">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          <Link to="/" className="flex items-center gap-1">
             <img 
               src={logo} 
               alt="BeautyByKristina" 
-              className="h-12 md:h-16 w-auto object-contain"
+              className="h-14 md:h-18 w-auto object-contain"
             />
-            <span className="font-display text-xl md:text-2xl tracking-widest text-foreground font-bold uppercase">
+            <span className="font-display text-2xl md:text-3xl tracking-widest text-foreground font-black uppercase">
               BEAUTYBYKRISTINA
             </span>
           </Link>
