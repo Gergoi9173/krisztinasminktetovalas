@@ -15,18 +15,22 @@ const Index = () => {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="min-h-screen flex items-center">
-          {/* Mobile: Image with overlay text */}
-          <div className="md:hidden relative w-full min-h-screen flex items-end">
-            <img 
-              src={heroCollage} 
-              alt="Sminktetoválás és szépségápolás eredmények" 
-              className="absolute inset-0 w-full h-full object-cover object-left brightness-[0.5]"
-            />
-            <div className="relative z-10 w-full px-6 pb-16 text-center">
-              <h1 className="text-4xl font-bold mb-6 tracking-tight text-white">
-                Ragyogj egész évben
-              </h1>
-              <p className="text-lg text-white/90 max-w-lg mx-auto mb-8">
+          {/* Mobile: Image with title overlay + content below */}
+          <div className="md:hidden flex flex-col w-full">
+            <div className="relative w-full h-[85vh] flex items-end">
+              <img 
+                src={heroCollage} 
+                alt="Sminktetoválás és szépségápolás eredmények" 
+                className="absolute inset-0 w-full h-full object-cover object-left brightness-[0.5]"
+              />
+              <div className="relative z-10 w-full px-6 pb-8 text-center">
+                <h1 className="text-4xl font-bold tracking-tight text-white">
+                  Ragyogj egész évben
+                </h1>
+              </div>
+            </div>
+            <div className="px-6 py-10 text-center bg-background">
+              <p className="text-lg text-muted-foreground max-w-lg mx-auto mb-8">
                 Nálam megtalálod mindazt amitől fiatalabb, szebb és magabiztosabb lehetsz – kavitációs zsírbontás, sminktetoválás, szikrázó tekintet professzionális termékekkel, kedvező áron.
               </p>
               <BookingDialog>
