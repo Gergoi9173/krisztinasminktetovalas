@@ -15,31 +15,29 @@ const Index = () => {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="min-h-screen flex items-center">
-          {/* Mobile: Image with title overlay + content below */}
-          <div className="md:hidden flex flex-col w-full">
-            <div className="relative w-full h-[85vh] flex items-end">
-              <img 
-                src={heroCollage} 
-                alt="Sminktetoválás és szépségápolás eredmények" 
-                className="absolute inset-0 w-full h-full object-cover object-left brightness-[0.5]"
-              />
-              <div className="relative z-10 w-full px-6 pb-8 text-center">
-                <h1 className="text-4xl font-bold tracking-tight text-white">
-                  Ragyogj egész évben
-                </h1>
-              </div>
-            </div>
-            <div className="px-6 py-10 text-center bg-background">
-              <p className="text-lg text-muted-foreground max-w-lg mx-auto mb-8">
-                Nálam megtalálod mindazt amitől fiatalabb, szebb és magabiztosabb lehetsz – kavitációs zsírbontás, sminktetoválás, szikrázó tekintet professzionális termékekkel, kedvező áron.
-              </p>
-              <BookingDialog>
-                <Button size="lg" className="text-lg px-8">
-                  Időpontfoglalás
-                </Button>
-              </BookingDialog>
-            </div>
+        {/* Mobile: Text first, then image */}
+        <div className="md:hidden flex flex-col w-full">
+          <div className="px-6 pt-10 pb-8 text-center bg-background">
+            <h1 className="text-4xl font-bold tracking-tight mb-6">
+              Ragyogj egész évben
+            </h1>
+            <p className="text-lg text-muted-foreground max-w-lg mx-auto mb-8">
+              Nálam megtalálod mindazt amitől fiatalabb, szebb és magabiztosabb lehetsz – kavitációs zsírbontás, sminktetoválás, szikrázó tekintet professzionális termékekkel, kedvező áron.
+            </p>
+            <BookingDialog>
+              <Button size="lg" className="text-lg px-8">
+                Időpontfoglalás
+              </Button>
+            </BookingDialog>
           </div>
+          <div className="w-full">
+            <img 
+              src={heroCollage} 
+              alt="Sminktetoválás és szépségápolás eredmények" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </div>
 
           {/* Desktop: Side by side layout */}
           <div className="hidden md:block container mx-auto px-4 lg:px-8 py-20">
