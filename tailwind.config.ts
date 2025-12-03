@@ -17,6 +17,7 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         display: ['Cormorant Garamond', 'serif'],
         liber: ['Liber', 'sans-serif'],
+        'math-italic': ['Math Italic', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -18,8 +18,8 @@ const Header = () => {
               alt="BeautyByKristina" 
               className="h-14 md:h-18 w-auto object-contain"
             />
-            <span className="font-liber text-2xl md:text-3xl tracking-widest text-foreground uppercase">
-              BEAUTYBYKRISTINA
+            <span className="font-math-italic text-2xl md:text-3xl tracking-widest text-foreground">
+              BeautyByKristina
             </span>
           </Link>
 
